@@ -1,9 +1,0 @@
-apiVersion: v2
-name: telefonistka-demo-application
-version: 0.1.0
-
-dependencies:
-- name: deployment
-  version: 0.3.2
-  repository: https://gitlab.com/api/v4/projects/57461258/packages/helm/stable
-  alias: telefonistka-demo-application
