@@ -9,7 +9,7 @@ promotionPaths:
   promotionPrs:
   - targetPaths:
     - "CLUSTERS/dev/"
-    -
+
 # Promotion from `dev` to `prod` via PR.
 - sourcePath: "CLUSTERS/dev/"
   promotionPrs:
