@@ -20,5 +20,5 @@ jobs:
         TEMPLATES_PATH: "/telefonistka/templates/"
     steps:
       - name: Check for dockerenv file
-        run: /telefonistka/bin/telefonistka -event
+        run: /telefonistka/bin/telefonistka event
 
