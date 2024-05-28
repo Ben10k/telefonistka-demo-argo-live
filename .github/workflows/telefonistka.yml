@@ -1,0 +1,24 @@
+name: Telefonistka
+# Controls when the workflow will run "closed" is used for prmoting changes, "opened"/"synchronize" are needed to warn on drift.
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  pull_request:
+    types: 
+      - closed
+      - opened
+      - synchronize
+    branches: [ "main" ]
+
+jobs:
+  telefonistka:
+    runs-on: ubuntu-latest
+    container:
+      image: odedbenozer/telefonistka:v0.1.11
+      env:
+        GITHUB_OAUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        APPROVER_GITHUB_OAUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TEMPLATES_PATH: "/telefonistka/templates/"
+    steps:
+      - name: Check for dockerenv file
+        run: /telefonistka/bin/telefonistka -event
+
