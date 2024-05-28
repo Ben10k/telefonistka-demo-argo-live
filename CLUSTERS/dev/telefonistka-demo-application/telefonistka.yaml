@@ -1,0 +1,4 @@
+# Documentation:
+# https://github.com/wayfair-incubator/telefonistka/blob/main/docs/installation.md#component-configuration
+promotionTargetBlockList:
+- build/dev/base/.*

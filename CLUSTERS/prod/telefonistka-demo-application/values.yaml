@@ -1,0 +1,6 @@
+telefonistka-demo-application:
+  fullnameOverride: telefonistka-demo-application
+
+  image:
+    repository: ghcr.io/Ben10k/telefonistka-demo-application
+    tag: "0.0.1"

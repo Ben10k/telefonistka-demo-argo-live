@@ -1,0 +1,17 @@
+# Documentation:
+# https://github.com/wayfair-incubator/telefonistka/blob/main/docs/installation.md#repo-configuration
+promotionPaths:
+
+# Promotion from `WORKSPACE` to `dev` automatically.
+- sourcePath: "_WORKSPACE/"
+  conditions:
+    autoMerge: true
+  promotionPrs:
+  - targetPaths:
+    - "CLUSTERS/dev/"
+    -
+# Promotion from `dev` to `prod` via PR.
+- sourcePath: "CLUSTERS/dev/"
+  promotionPrs:
+  - targetPaths:
+    - "CLUSTERS/prod/"
