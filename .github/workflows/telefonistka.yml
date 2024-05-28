@@ -19,6 +19,18 @@ jobs:
         APPROVER_GITHUB_OAUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TEMPLATES_PATH: "/telefonistka/templates/"
     steps:
-      - name: Check for dockerenv file
+      - name: Telefonistka
         run: /telefonistka/bin/telefonistka event
-
+  triggerWorkflow:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Trigger Workflow
+      uses: actions/github-script@v6
+      with:
+        script: |
+          github.rest.actions.createWorkflowDispatch({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            workflow_id: 'telefonistka.yml',
+            ref: 'main'
+          })
