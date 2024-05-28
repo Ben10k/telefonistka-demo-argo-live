@@ -13,7 +13,7 @@ jobs:
   telefonistka:
     runs-on: ubuntu-latest
     container:
-      image: odedbenozer/telefonistka:v0.1.11
+      image: odedbenozer/alpine-telefonistka:v0.1.11
       env:
         GITHUB_OAUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         APPROVER_GITHUB_OAUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
