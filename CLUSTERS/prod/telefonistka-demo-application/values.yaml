@@ -1,6 +1,6 @@
 telefonistka-demo-application:
   fullnameOverride: telefonistka-demo-application
-  # Hello world 7
+  # Hello world 8
 
   image:
     repository: ghcr.io/Ben10k/telefonistka-demo-application
