@@ -5,3 +5,6 @@ telefonistka-demo-application:
   image:
     repository: ghcr.io/Ben10k/telefonistka-demo-application
     tag: "0.0.1"
+telefonistka-demo-argo-live:
+  image:
+    tag: 0.0.3
