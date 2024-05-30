@@ -4,4 +4,4 @@ telefonistka-demo-application:
 
   image:
     repository: ghcr.io/Ben10k/telefonistka-demo-application
-    tag: "0.0.3"
+    tag: "0.0.4"
