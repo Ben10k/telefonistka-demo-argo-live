@@ -16,7 +16,6 @@ jobs:
     container:
       image: odedbenozer/telefonistka:alpine-v0.1.11
       env:
-        GITHUB_OAUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         APPROVER_GITHUB_OAUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TEMPLATES_PATH: "/telefonistka/templates/"
     steps:
